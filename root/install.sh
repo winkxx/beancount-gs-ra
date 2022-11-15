@@ -35,7 +35,7 @@ echo $OS_type
 
 
 
-
+#-----------------安装杂项--------------
 pip3 install -U yt-dlp
 wget https://github.com/P3TERX/Aria2-Pro-Core/releases/download/1.36.0_2021.08.22/aria2-1.36.0-static-linux-amd64.tar.gz
 tar zxvf aria2-1.36.0-static-linux-amd64.tar.gz
@@ -44,16 +44,13 @@ sudo chmod 777 /root/test/
 sudo mv /root/test /root/.aria2
 pip3 install aria2p
 sudo chmod 777 /root/.aria2/
-
-
-
-
-
+#----------------安装nodejs------------------------
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt install nodejs
+#-------------------安装rclone-------------------
 curl https://rclone.org/install.sh | sudo bash
-
+#-------------------安装文件管理器---------------
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
-
-
 
 #wget https://github.com/FolderMagic/FolderMagic/raw/master/FolderMagic
 #chmod +x FolderMagic
