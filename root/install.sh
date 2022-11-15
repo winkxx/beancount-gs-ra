@@ -47,6 +47,11 @@ sudo chmod 777 /root/.aria2/
 #----------------安装nodejs------------------------
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt install nodejs
+#---------------安装beancount-gs--------------------
+pip3 install beancount
+git clone https://github.com/BaoXuebin/beancount-gs.git
+cd beancount-gs
+npm install && node server.js
 #-------------------安装rclone-------------------
 curl https://rclone.org/install.sh | sudo bash
 #-------------------安装文件管理器---------------
